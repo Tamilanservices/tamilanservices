@@ -98,7 +98,7 @@
       <div class="modal-body p-4">
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="phone" class="form-label">Business Name *</label>
+                <label for="phone" class="form-label">Business Name <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="name" placeholder="Enter Your Business Name" required>
                 <div class="invalid-feedback">Please enter your business name </div>
             </div>
