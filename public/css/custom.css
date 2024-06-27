@@ -1,0 +1,133 @@
+:root {
+    --main-bg-color: #fff; 
+    --main-text-color: #555; 
+    --dark-text-color: #222; 
+    --light-text-color: #c7c7c7; 
+    --primary-color: #000000; 
+    --light-bg-color: #ededee; 
+    --dark-bg-color: #000000; 
+    --rounded:.375rem;
+    --roboto-condensed :"Roboto Condensed", sans-serif;
+    --pt-sans:"PT Sans", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: var(--pt-sans);
+    font-weight: 400;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--roboto-condensed);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.font-12 {
+    font-size: 12px;
+}
+.font-13 {
+    font-size: 13px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-15 {
+    font-size: 15px;
+}
+.font-16 {
+    font-size: 16px;
+}
+.font-17 {
+    font-size: 17px;
+}
+.font-18 {
+    font-size: 18px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-22 {
+    font-size: 22px;
+}
+.font-24 {
+    font-size: 24px;
+}
+.font-25 {
+    font-size: 25px;
+}
+.btn {
+    font-family: var(--roboto-condensed);
+}
+.navbar-nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.navbar-nav a:hover {
+    background: rgb(255 255 255 / 37%);
+}
+.category {
+    border:1px solid #ddd;
+    background-color: #fff;
+    padding:10px;
+    border-radius: var(--rounded);
+    display: block;
+}
+.category:hover {
+    background-color: var(--light-bg-color);
+}
+.category a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.category img {
+    width: 50px;
+    height: auto;
+}
+.phone-code {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    padding-right: 5px;
+    border-right: 2px solid #a7a7a7;
+}
+.pl-50 {
+    padding-left: 50px;
+}
+.contact {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ratings {
+    color: #ffffff;
+    background-color: green;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+.object-cover {
+    object-fit: cover;
+}
+.comp-name {
+    font-weight: 600;
+    font-family: var(--roboto-condensed);
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.h-150p {
+    height: 150px;
+}
+
+.copyright {
+    background-color: #ffffff14;
+    font-size: 12px;
+}
