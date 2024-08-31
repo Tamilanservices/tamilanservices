@@ -14,7 +14,6 @@
             <input type="search" class="form-control" placeholder="Search Service">
         </div>
     </div>
-    
     <div class="card p-4 mb-3">
         <div class="card-content">
             <div class="row row-cols-12 g-3">

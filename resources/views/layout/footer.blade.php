@@ -1,5 +1,5 @@
-<div class="bg-dark text-white">
-    <div class="container py-4">
+<div class="bg-dark text-white py-3">
+    <!-- <div class="container py-4">
         <div class="row">
             <div class="col-4">
                 <h6 class="mb-3">Quick Links</h6>
@@ -27,8 +27,18 @@
                 </form>
             </div>
         </div>
+    </div> -->
+    <div class="container d-flex justify-content-between">
+        <div class="copyright">Copyright 2024 All rights reserved</div>
+        <div class="d-flex align-content-center justify-content-end">
+            <i class="fa-brands fa-facebook-f me-3"></i>
+            <i class="fa-brands fa-instagram me-3"></i>
+            <i class="fa-brands fa-x-twitter me-3"></i>
+            <i class="fa-brands fa-youtube me-3"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
     </div>
-    <div class="copyright text-center py-2">Copyright 2024 All rights reserved</div>
+    
 </div>
 
 <div class="modal fade" id="login_popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
@@ -126,14 +136,17 @@
                 <div class="invalid-feedback">Please enter your Sub Title </div>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="phone" class="form-label">City *</label>
-                <select class="form-select" required>
+                <label for="city" class="form-label">City *</label>
+                <select class="selectpicker w-100" data-style="form-select border" id="city" data-live-search="true" required>
                     <option selected disabled value="">Select Your City</option>
                     <option value="1">All City</option>
                     <option value="2">Salem</option>
                     <option value="3">Dharmapuri</option>
                 </select>
                 <div class="invalid-feedback">Select your city</div>
+            </div>
+            <div class="col-12">
+                <div class="summernote"></div>
             </div>
         </div>
       </div>
