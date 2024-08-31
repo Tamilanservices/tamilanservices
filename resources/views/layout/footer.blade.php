@@ -29,7 +29,7 @@
         </div>
     </div> -->
     <div class="container d-flex justify-content-between">
-        <div class="copyright">Copyright 2024 All rights reserved</div>
+        <div class="font-13">Copyright 2024 All rights reserved</div>
         <div class="d-flex align-content-center justify-content-end">
             <i class="fa-brands fa-facebook-f me-3"></i>
             <i class="fa-brands fa-instagram me-3"></i>
@@ -63,8 +63,8 @@
             </div>
             <div class="mb-3">
                 <!-- <label for="phone" class="form-label">City *</label> -->
-                <select class="form-select" required>
-                    <option selected disabled value="">Select Your City</option>
+                <select class="selectpicker w-100" data-style="form-select border" id="district" data-live-search="true" required>
+                    <option selected disabled value="">Select Your District </option>
                     <option value="1">Salem</option>
                     <option value="2">Erodu</option>
                     <option value="3">Dharmapuri</option>
@@ -101,43 +101,20 @@
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header px-4">
-        <h1 class="modal-title fs-5">Listing your business</h1>
+        <h1 class="modal-title fs-5">Add Your Business</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form class="needs-validation" novalidate>
       <div class="modal-body p-4">
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label for="phone" class="form-label">Business Name <span class="text-danger">*</span></label>
+                <label for="phone" class="form-label">Business Name<span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="name" placeholder="Enter Your Business Name" required>
                 <div class="invalid-feedback">Please enter your business name </div>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="phone" class="form-label">Sub Title </label>
-                <input type="text" class="form-control" id="name" placeholder="Enter Your Sub Title">
-                <div class="invalid-feedback">Please enter your Sub Title </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="phone" class="form-label">Mobile No*</label>
-                <div class="position-relative">
-                    <input type="tel" class="form-control pl-50" id="phone" placeholder="Enter Your what's up no" required>
-                    <span class="phone-code">+91</span>
-                </div>
-                <div class="invalid-feedback">Please enter your mobile no </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="phone" class="form-label">Photo</label>
-                <input type="file" class="form-control" id="photo" placeholder="Enter Your business photo">
-                <div class="invalid-feedback">Please enter your Sub Title </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="address" class="form-label">Address</label>
-                <input type="text" class="form-control" id="adress" placeholder="Enter Your business Address">
-                <div class="invalid-feedback">Please enter your Sub Title </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="city" class="form-label">City *</label>
-                <select class="selectpicker w-100" data-style="form-select border" id="city" data-live-search="true" required>
+                <label for="district" class="form-label">District<span class="text-danger">*</span></label>
+                <select class="selectpicker w-100" data-style="form-select border" id="district" data-live-search="true" required>
                     <option selected disabled value="">Select Your City</option>
                     <option value="1">All City</option>
                     <option value="2">Salem</option>
@@ -145,7 +122,31 @@
                 </select>
                 <div class="invalid-feedback">Select your city</div>
             </div>
+            <div class="col-md-6 mb-3">
+                <label for="phone" class="form-label">Mobile No<span class="text-danger">*</span></label>
+                <div class="position-relative">
+                    <input type="tel" class="form-control pl-50" id="phone" placeholder="Enter Your what's up no" required>
+                    <span class="phone-code">+91</span>
+                </div>
+                <div class="invalid-feedback">Please enter your mobile no </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="adress" placeholder="Enter Your business Address">
+                <div class="invalid-feedback">Please enter your Sub Title </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="phone" class="form-label">Photo</label>
+                <input type="file" class="form-control" id="photo" placeholder="Enter Your business photo">
+                <div class="invalid-feedback">Please enter your Sub Title </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="phone" class="form-label">Short Discription </label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Short Discription">
+                <div class="invalid-feedback">Please enter your Short Discription </div>
+            </div>
             <div class="col-12">
+                <label for="discription" class="form-label"> Discription</label>
                 <div class="summernote"></div>
             </div>
         </div>

@@ -7,7 +7,7 @@
         ADD's
     </div>
     <div class="row g-3 mb-3">
-        <div class="col-md-9">
+        <div class="col-md-12">
             <div class="row align-items-center mb-3">
                 <div class="col">
                     <h2 class="font-22 fw-semibold mb-0">Service Listing</h2>
@@ -104,11 +104,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
             <div class="card h-100 p-3 d-flex align-items-center justify-content-center bg-muted">
                 ADDs
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- ADD's -->
     <div class="card rounded p-3 mb-3 h-150p text-center">
