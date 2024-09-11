@@ -38,7 +38,7 @@
             <i class="fa-brands fa-whatsapp"></i>
         </div>
     </div>
-    
+
 </div>
 
 <div class="modal fade" id="login_popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
@@ -104,8 +104,9 @@
         <h1 class="modal-title fs-5">Add Your Business</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form class="needs-validation" novalidate>
-      <div class="modal-body p-4">
+      <form action="{{ url('business-info') }}" method="post">
+          @csrf
+          <div class="modal-body p-4">
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="phone" class="form-label">Business Name<span class="text-danger">*</span></label>
@@ -153,7 +154,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary px-4">Save</button>
+        <input type="submit" class="btn btn-primary px-4" value="Save">
       </div>
       </form>
     </div>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BusinessInfoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,6 @@ Route::get('/listing', function () {
 Route::get('/details', function () {
     return view('pages.details');
 });
+
+Route::post('business-info', [BusinessInfoController::class, 'addInfo']);
+
