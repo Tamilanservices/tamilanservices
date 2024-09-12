@@ -25,4 +25,7 @@ class UsersService implements UserServiceInterface
         }
         return $result;
     }
+    public function userProfile($postVal){
+
+    }
 }

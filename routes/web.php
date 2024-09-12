@@ -19,10 +19,12 @@ use App\Http\Controllers\UserController;
 
 
 Route::post('/register', [UserController::class, 'register'])->name('register');
+Route::get('/profile', [UserController::class, 'userProfile'])->name('profile');
+// Route::post('/update', [UserController::class, 'profileUpdate'])->name('profile-update');
 
-Route::post('/home', [BusinessInfoController::class, 'index'])->name('home');
+Route::get('/', [BusinessInfoController::class, 'index'])->name('home');
 
 Route::get('/listing', [BusinessInfoController::class, 'listing']);
 Route::get('/add-business', [BusinessInfoController::class, 'addInfo']);
 Route::post('/store-business', [BusinessInfoController::class, 'store']);
-Route::get('/details/{id}', [BusinessInfoController::class, 'details']);
+Route::get('/details', [BusinessInfoController::class, 'bus_details']);

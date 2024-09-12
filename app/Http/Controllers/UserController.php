@@ -17,7 +17,6 @@ class UserController extends Controller
 
     public function register(Request $request)
     {
-        dd($request);exit;
         $request->validate([
             'name' => 'required',
             'phone' => 'required|email|unique:users',
@@ -26,7 +25,11 @@ class UserController extends Controller
 
         $this->userService->store($request);
         
- 
         // return redirect('/login')->with('success', 'Registration successful! Please log in.');
+    }
+    public function userProfile(Request $request)
+    {
+        $userData = array();
+        return view('pages.profile', compact('userData'));
     }
 }
