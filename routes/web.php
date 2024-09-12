@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BusinessInfoController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,15 +15,14 @@ use App\Http\Controllers\BusinessInfoController;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
-Route::get('/listing', function () {
-    return view('pages.listing');
-});
-Route::get('/details', function () {
-    return view('pages.details');
-});
 
-Route::post('business-info', [BusinessInfoController::class, 'addInfo']);
 
+
+Route::post('/register', [UserController::class, 'register'])->name('register');
+
+Route::post('/home', [BusinessInfoController::class, 'index'])->name('home');
+
+Route::get('/listing', [BusinessInfoController::class, 'listing']);
+Route::get('/add-business', [BusinessInfoController::class, 'addInfo']);
+Route::post('/store-business', [BusinessInfoController::class, 'store']);
+Route::get('/details/{id}', [BusinessInfoController::class, 'details']);
