@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BusinessInfoController;
 use App\Http\Controllers\UserController;
@@ -15,9 +16,6 @@ use App\Http\Controllers\UserController;
 |
 */
 
-
-
-
 Route::post('/register', [UserController::class, 'register'])->name('register');
 Route::get('/profile', [UserController::class, 'userProfile'])->name('profile');
 // Route::post('/update', [UserController::class, 'profileUpdate'])->name('profile-update');
@@ -28,3 +26,8 @@ Route::get('/listing', [BusinessInfoController::class, 'listing']);
 Route::get('/add-business', [BusinessInfoController::class, 'addInfo']);
 Route::post('/store-business', [BusinessInfoController::class, 'store']);
 Route::get('/details', [BusinessInfoController::class, 'bus_details']);
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/dashboard', [AdminController::class, 'index']);
+
+});

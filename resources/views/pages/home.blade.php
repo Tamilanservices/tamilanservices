@@ -11,7 +11,13 @@
             <h2 class="font-22 fw-semibold mb-0">Services</h2>
         </div>
         <div class="col-auto">
-            <input type="search" class="form-control" placeholder="Search Service">
+            <select class="selectpicker w-200px font-12" data-style="form-select border bg-white" id="search" data-live-search="true" required title="Select Categories">
+                <!-- <option selected disabled value="">Select Categories</option> -->
+                <option value="1">Electrical Plumbing</option>
+                <option value="2"> Agriculture </option>
+                <option value="3"> Academy </option>
+                <option value="4"> Repairs & Services </option>
+            </select>
         </div>
     </div>
     <div class="card p-4 mb-3">

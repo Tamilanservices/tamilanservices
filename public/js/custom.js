@@ -14,6 +14,10 @@
     })
   })()
 
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+  });
+
   $(document).on("click",".signup-form",function() {
     $('.login').addClass('d-none');
     $('.signup').removeClass('d-none');
