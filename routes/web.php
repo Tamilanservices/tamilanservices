@@ -22,10 +22,10 @@ Route::get('/profile', [UserController::class, 'userProfile'])->name('profile');
 
 Route::get('/', [BusinessInfoController::class, 'index'])->name('home');
 
-Route::get('/listing', [BusinessInfoController::class, 'listing']);
-Route::get('/add-business', [BusinessInfoController::class, 'addInfo']);
+Route::get('/listing', [BusinessInfoController::class, 'listing'])->name('listing');
+Route::match(['get', 'post'], '/add-business', [BusinessInfoController::class, 'addInfo']);
 Route::post('/store-business', [BusinessInfoController::class, 'store']);
-Route::get('/details', [BusinessInfoController::class, 'bus_details']);
+Route::get('/details/{id}', [BusinessInfoController::class, 'bus_details']);
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/dashboard', [AdminController::class, 'index']);

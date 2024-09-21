@@ -22,6 +22,7 @@ return new class extends Migration
             $table->unsignedBigInteger('district_id'); // Foreign key to districts table
             $table->unsignedBigInteger('created_by'); // User ID who created the record
             $table->unsignedBigInteger('updated_by')->nullable(); // User ID who last updated the record, nullable
+            $table->enum('status', ['Y', 'N'])->default('Y');
             $table->timestamps(); // Adds created_at and updated_at columns
         });
     }
